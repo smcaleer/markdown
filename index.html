@@ -1,0 +1,67 @@
+<!DOCTYPE html><!--
+	Copyright (c) 2014-2023, CKSource Holding sp. z o.o. All rights reserved.
+	This file is licensed under the terms of the MIT License (see LICENSE.md).
+-->
+
+<html lang="en" dir="ltr">
+	<head>
+		<title>CKEditor ClassicEditor Markdown</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="ckeditor5.png">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
+
+		
+
+
+		<header>
+			<div class="centered">
+				<h1><a href="https://www.wavefront.com/" target="_blank" rel="noopener noreferrer"><img width="140" height="22" src="vmware-logo-grey.svg" alt="VMware" title="VMware" class="vmware-logo"></a></h1>
+				<nav>
+					<ul>
+						<li>WYSIWYG Markdown Editor</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+
+		<div class="editor">
+		</div>		
+		
+<hr>
+
+
+
+
+
+
+
+		<script src="build/ckeditor.js"></script>
+		<script>ClassicEditor
+				.create( document.querySelector( '.editor' ), {
+					
+					licenseKey: '',
+					
+					
+					
+				} )
+				.then( editor => {
+					window.editor = editor;
+			
+					
+					
+					
+				} )
+				.catch( error => {
+					console.error( 'Oops, something went wrong!' );
+					console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+					console.warn( 'Build id: mx6qnvt7jxmr-lar34ebb3gmw' );
+					console.error( error );
+				} );
+		</script>
+	</body>
+</html>
